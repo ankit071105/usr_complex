@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Metadatos -->
+    <meta charset="utf-8">
+    <meta name="author" content="Brenda Sarahí Rosas Morán">
+    <meta name="description" content="Portafolio de desarrollo web de Daniela Tejada">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Bootstrap, Daniela Tejada">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Titulo -->
+    <title>| Keep Growing | Trust |</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYspJqSNr7Uo3gxIywGZojjzepT2-9Yj1CUQ&usqp=CAU">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- Iconos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- CSS -->
+    <link href="style.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="angular.js"></script>
+<style>
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+body{
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-smooth: antialiased;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+  font-size: 15px;
+  background: #246eaf;
+  width: 100%;
+}
+.intro{
+   background: #f7f2f2;
+   padding: 60px 30px;
+   color: #030202;
+   margin-bottom: 15px;
+   line-height: 1.5;
+   text-align: center;
+}
+.intro h1 {
+   font-size: 18pt;
+   padding-bottom: 15px;
+
+}
+.intro p{
+   font-size: 14px;
+}
+
+.action{
+   text-align: center;
+   display: block;
+   margin-top: 20px;
+}
+
+.intro a.btn {
+  text-decoration: none;
+  color: #0c0909;
+   border: 2px solid #666;
+   padding: 10px 15px;
+   display: inline-block;
+   margin-left: 5px;
+}
+.intro a.btn:hover{
+   background: #666;
+   color: #000000;
+    transition: .3s;
+-webkit-transition: .3s;
+}
+.btn:before{
+  font-family: FontAwesome;
+  font-weight: normal;
+  margin-right: 10px;
+}
+.github:before{content: "\f09b"}
+.down:before{content: "\f019"}
+.back:before{content:"\f112"}
+.credit{
+    background: #fff;
+    padding: 12px;
+    font-size: 9pt;
+    text-align: center;
+    color: #333;
+    margin-top: 40px;
+
+}
+.credit span:before{
+   font-family: FontAwesome;
+   color: #e41b17;
+   content: "\f004";
+
+
+}
+.credit a{
+   color: #333;
+   text-decoration: none;
+}
+.credit a:hover{
+   color: #1DBF73; 
+}
+.credit a:hover:after{
+    font-family: FontAwesome;
+    content: "\f08e";
+    font-size: 9pt;
+    position: absolute;
+    margin: 3px;
+}
+main{
+  background: #fff;
+  padding: 20px;
+  
+}
+
+article li{
+   color: #444;
+   font-size: 15px;
+   margin-left: 33px;
+   line-height: 1.5;
+   padding: 5px;
+}
+article h1,
+article h2,
+article h3,
+article h4,
+article p{
+   padding: 14px;
+   color: #333;
+}
+article p{
+   font-size: 15px;
+    line-height: 1.5;
+}
+ 
+@media only screen and (min-width: 1280px){
+    main{
+      max-width: 100%;
+      margin-left: auto;
+      margin-right: auto; 
+      padding: 24px;
+    }
+
+
+}
+
+.set-overlayer,
+.set-glass,
+.set-sticky {
+	cursor: pointer;
+	height: 45px;
+	line-height: 45px;
+	padding: 0 15px;
+	color: #333;
+	font-size: 16px;
+}
+.set-overlayer:after,
+.set-glass:after,
+.to-active:after,
+.set-sticky:after {
+	font-family: FontAwesome;
+	font-size: 18pt;
+	position: relative;
+	float: right;
+}
+.set-overlayer:after,
+.set-glass:after,
+.set-sticky:after {
+	content: "\f204";
+	transition: .6s;
+}
+
+.to-active:after {
+	content: "\f205";
+	color: #008080;
+	transition: .6s;
+}
+.set-overlayer,
+.set-glass,
+.set-sticky,
+.source,
+.theme-tray {
+	margin: 10px;
+	background: #f2f2f2;
+	border-radius: 5px;
+	border: 2px solid #f1f1f1;
+	box-sizing: border-box;
+}
+/* Syntax Highlighter*/
+
+pre.prettyprint {
+	padding: 15px !important;
+   margin: 10px;
+	border: 0 !important;
+  background: #f2f2f2;
+  overflow: auto;
+}
+
+.source {
+	white-space: pre;
+	overflow: auto;
+	max-height: 400px;
+}
+code{
+    border:1px solid #181818;
+    padding: 2px;
+    border-radius: 2px;
+}
+.show-cart li {
+   display: flex;
+ }
+ .card {
+   margin-bottom: 20px;
+ }
+ .card-img-top {
+   width: 100px;
+   height: 100px;
+   align-self: center;
+ }
+
+
+
+
+</style>
+   
+  </head>
+  <body style="background-color: rgb(0, 0, 0);">
+    <!-- Barra de navegacion -->
+  
+    <nav class="navbar navbar-expand-md navbar-light" id="navbar" style="width: 100%;">
+      <div class="container-fluid" style="width: 100%;">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-toggler" style="width: 100%;">
+          <a class="navbar-brand" href="#">
+            <img src="adi.png" width="50px" alt="Logo de la página " height="50px" style="border-radius: 100%; margin-bottom: 100px; margin-top: -14px;">
+          </a>
+          <ul class="navbar-nav d-flex justify-content-center align-items-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#sobre-mi" style="color: #f5f6f7;"> About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#facility" style="color: #f5f6f7;"> Facility</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#proyectos">Shop Size</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contacts</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- <a href="https://app.vectary.com/p/3YhST1M9kz9NDEFBiHQ6Jx/">Visit our Complex 3d View</a> -->
+<section class="sec1">
+
+  <div class="con">
+ 
+    <div class="slider">
+     
+      <div class="imagebox">
+       
+        <div class="slide"><img src="1.png" alt=""    style="width: 300px; height: 200px;background-position: center; background-size: cover;" ></div>
+        <div class="slide"><img src="3.png" alt=""    style="width: 300px; height: 200px;background-position: center; background-size: cover;" ></div>
+        <div class="slide"><img src="2.png" alt=""    style="width: 300px; height: 200px;background-position: center; background-size: cover;" ></div>
+        <div class="slide"><img src="4.png" alt=""    style="width: 300px; height: 200px;background-position: center; background-size: cover;" ></div>
+        <div class="slide"><img src="1.png" alt=""    style="width: 300px; height: 200px;background-position: center; background-size: cover;" ></div>
+             
+        <div class="slide"><img src="1.png" alt=""    style="width: 300px; height: 200px;background-position: center; background-size: cover;" ></div>
+        <div class="slide"><img src="3.png" alt=""    style="width: 300px; height: 200px;background-position: center; background-size: cover;" ></div>
+        <div class="slide"><img src="2.png" alt=""    style="width: 300px; height: 200px;background-position: center; background-size: cover;" ></div>
+        <div class="slide"><img src="4.png" alt=""    style="width: 300px; height: 200px;background-position: center; background-size: cover;" ></div>
+        <div class="slide"><img src="1.png" alt=""    style="width: 300px; height: 200px;background-position: center; background-size: cover;" ></div>
+               
+        <div class="slide"><img src="1.png" alt=""    style="width: 300px; height: 200px;background-position: center; background-size: cover;" ></div>
+        <div class="slide"><img src="3.png" alt=""    style="width: 300px; height: 200px;background-position: center; background-size: cover;" ></div>
+        <div class="slide"><img src="2.png" alt=""    style="width: 300px; height: 200px;background-position: center; background-size: cover;" ></div>
+        <div class="slide"><img src="4.png" alt=""    style="width: 300px; height: 200px;background-position: center; background-size: cover;" ></div>
+        <div class="slide"><img src="1.png" alt=""    style="width: 300px; height: 200px;background-position: center; background-size: cover;" ></div>
+              
+        <div class="slide"><img src="1.png" alt=""    style="width: 300px; height: 200px;background-position: center; background-size: cover;" ></div>
+        <div class="slide"><img src="3.png" alt=""    style="width: 300px; height: 200px;background-position: center; background-size: cover;" ></div>
+        <div class="slide"><img src="2.png" alt=""    style="width: 300px; height: 200px;background-position: center; background-size: cover;" ></div>
+        <div class="slide"><img src="4.png" alt=""    style="width: 300px; height: 200px;background-position: center; background-size: cover;" ></div>
+        <div class="slide"><img src="1.png" alt=""    style="width: 300px; height: 200px;background-position: center; background-size: cover;" ></div>
+
+    </div>
+  </div>
+</section>
+    <br>
+    <br>
+    <!-- Seccion Hero -->
+    <section class="hero align-items-stretch" id="hero" style="height: 200px !important;">
+      <div class="hero-principal d-flex flex-column justify-content-center align-items-center" >
+        <img class="hero-imagen-desarrollador rounded-circle" src="adi.png" alt="Foto de Brenda Sarahí" style=" width: 280px; height: 250px; border-radius: 30% !important;">
+        <h1 style=" font-size: 35px; font-weight: bolder;">USR COMPLEX</h1>
+        <!--<h2>Desarrollo sitios web y escribo artículos sobre programación.</h2>-->
+
+        <!--Animación con JavaScript-->
+        <h2 class="text-primary mb-4" id="typewriter" style="color: #f5f6f7;"> </h2>
+      </div>
+
+    </section>
+     <br>
+     <br>
+    <!-- Sobre mi -->
+    <section id="sobre-mi" class="sobre-mi seccion-oscura" style="height: 600px;">
+      <div class="contenedor">
+        
+        <h2 class="seccion-titulo" style="color: aliceblue;">About the Complex...</h2>
+        <br>
+        <h3 style="text-align: center; color: aliceblue;  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"> Our Purpose</h3>
+        <hr>
+        <p class="seccion-texto" style="font-family: monospace; font-size: 12px; text-align: center; padding: 29px;"> ‣ To Give Safety 
+          <br>
+        <br>
+        ‣ Providing 24hr Electric Supply  
+        <br>
+        <br>
+        ‣ Providing Water Supply 
+        <br>
+        <br> 
+        ‣ Providing Lift
+        <br>
+        <br>
+        ‣ Providing Under-Ground Parking Facility
+        <br>
+        <br>
+        ‣ Providing Washroom 
+    
+      </p>
+        <br>
+        <br>
+        <h3 style="text-align: center; color: aliceblue;  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">What Makes Us Unique :-</h3>
+      <hr>
+        <p class="seccion-texto" style="font-family: monospace; font-size: 12px; text-align: center; padding: 29px; "> We provide you Parking Facility & 24hr electric supply , Water Supply....</p>
+        <br>
+<br>
+      </div>
+    </section>
+    <br>
+    
+    <!-- Experiencia -->
+    <section class="experiencia seccion-clara" style="color: #000000 !important;" >
+      <div class="container text-center" style="color: #000000 !important;" id="facility">
+        <div class="row" style="color: #000000 !important;">
+          <!-- Desarrollo Web -->
+          <div class="columna col-12 col-md-4">
+         <img src="https://www.99acres.com/microsite/articles/files/2018/07/car-parking.jpg" alt="" width="100px" height="100px" id="img">
+            <p class="experiencia-titulo">Parking Facility</p>
+            <p> <br>Some of them are...</p>
+            <img src="https://img.freepik.com/free-vector/parking-graphic-design-vector-illustration_24908-54474.jpg" alt="" width="250px" height="150px" style="background-size: cover; background-position: center;" class="kk">
+            <div class="badges-contenedor">
+              <span class="badge text-bg-warning">Providing Under-Ground Parking</span>
+              <span class="badge text-bg-warning">Lift attach to it</span>
+           
+              </div>
+          </div>
+          <br>
+          <br>
+          <hr>
+          <!-- Articulos -->
+          <div class="columna col-12 col-md-4">
+            <img src="data:image/png;base64,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" alt="" width="100px" height="100px" id="img">
+            <p class="experiencia-titulo">24hr Facility</p>
+            <p>
+            Some of them are...<br>
+             <img src="https://www.thoughtco.com/thmb/EGPo-MWS-jgXqIvX5BQagHfMLp0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/lightbulblit-57a5bf6b5f9b58974aee831e.jpg" alt="  " width="100px" height="100px" style="background-size: cover; background-position: center;" class="kk">
+             <img src="https://media.hswstatic.com/eyJidWNrZXQiOiJjb250ZW50Lmhzd3N0YXRpYy5jb20iLCJrZXkiOiJnaWZcL3dhdGVyLXVwZGF0ZS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOiIxMjAwIn19fQ==" alt="" width="100px" height="100px" style="background-size: cover; background-position: center;" class="kk">
+             <img src="https://cdn.moglix.com/p/swqRywq3rj12N-xxlarge.jpg" alt="" width="100px" height="100px" style="background-size: cover; background-position: center;" class="kk"> 
+             
+    
+          </p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-warning">24hr Water Supply</span>
+              <span class="badge text-bg-warning">24hr Electric Supply</span>
+              <span class="badge text-bg-warning">24hr Washroom Facility</span>
+            </div>
+          </div>
+          <!-- Estudiante -->
+         
+        </div>
+      </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="proyectos" class="proyectos-recientes seccion-clara d-flex flex-column" style="background:linear-gradient(to right, rgb(58, 57, 57) 0%, rgb(27, 26, 26) 50%, black 100%) !important;">
+      <h1 class="seccion-titulo texto-negro" style="color: #f5f7f7;font-size: 35px; margin-bottom: -70px;">Shop-Size</h1>
+  
+      <!-- Galeria de Proyectos -->
+      <div class="container text-center proyectos-contenedor">
+        <div class="row">
+          <!-- Proyecto 1 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="5.png" alt="Proyecto 1" id="img1" style="height: 280px; width: 300px;">
+              <div class="overlay">
+                <p style="margin-right: 15px; text-align: center; font-size: 18px;" >Front Shop Size  
+                <br>
+              <br>
+            <B>220 sq.ft.</B></p>
+          
+                </div>
+                <p style="color: #f1f1f1; font-size:30px; font-weight: bolder; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;" > Front Shop Size 220 sq.ft.</p>
+                <p style="color: whitesmoke;">Two shop combine of 10 * 11 sq.ft.</p>
+                <br>
+                 <a href="https://wa.me/8340601055" style="background-color: #246eaf; color: #f0ecec; padding: 20px; border-radius: 30%;">Book Now</a>
+              </div>
+         
+              <br>
+              <br>    </div>
+    <br>
+    <br>
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="proyecto">
+        <img src="6.png" alt="Proyecto 1" id="img1" style="height: 280px; width: 300px;">
+        <div class="overlay">
+          <p style="margin-right: 15px; text-align: center; font-size: 18px;" > Shop No:- 7 & 8 Size  
+          <br>
+        <br>
+      <B>100 sq.ft.</B></p>
+    
+          </div>
+          <p style="color: #f1f1f1; font-size:30px; font-weight: bolder; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;" > Shop No:- 7 & 8 Size   100 sq.ft.</p>
+          <p style="color: whitesmoke;">This is last two shop located at the center of the Main gate of size 10 * 10 sq.ft.</p>
+          <br>
+           <a href="https://wa.me/8340601055" style="background-color: #246eaf; color: #f0ecec; padding: 20px; border-radius: 30%;">Book Now</a>
+        </div>
+   
+        <br>
+        <br>    </div>
+<br>
+<br>
+<div class="col-12 col-md-6 col-lg-4">
+  <div class="proyecto">
+    <img src="7.png" alt="Proyecto 1" id="img1" style="height: 320px; width: 300px;">
+    <div class="overlay">
+      <p style="margin-right: 15px; text-align: center; font-size: 18px;" >Shop No 5 & 6 on left side 
+      <br>
+  
+  <B>120 sq.ft.</B></p>
+
+      </div>
+      <p style="color: #f1f1f1; font-size:30px; font-weight: bolder; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;" >Shop No 5 & 6 on left side of size 120 sq.ft.</p>
+      <p style="color: whitesmoke;">Second Shop on the left hand side  of 12 * 10 sq.ft.</p>
+      <br>
+       <a href="https://wa.me/8340601055" style="background-color: #246eaf; color: #f0ecec; padding: 20px; border-radius: 30%;">Book Now</a>
+    </div>
+
+    <br>
+    <br>    </div>
+<br>
+<br>
+<div class="col-12 col-md-6 col-lg-4">
+  <div class="proyecto">
+    <img src="8.png" alt="Proyecto 1" id="img1" style="height: 320px; width: 300px;">
+    <div class="overlay">
+      <p style="margin-right: 15px; text-align: center; font-size: 18px;" >Shop No 10 , 11 & 12 on right side 
+      <br>
+
+  <B>120 sq.ft.</B></p>
+
+      </div>
+      <p style="color: #f1f1f1; font-size:30px; font-weight: bolder; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;" >Shop No 10 , 11 & 12 on right side of size 120 sq.ft.</p>
+      <p style="color: whitesmoke;">Three Shop on right side of size 12 * 10 sq.ft.</p>
+      <br>
+       <a href="https://wa.me/8340601055" style="background-color: #246eaf; color: #f0ecec; padding: 20px; border-radius: 30%;">Book Now</a>
+    </div>
+
+    <br>
+    <br>    </div>
+<br>
+<br>
+<div class="col-12 col-md-6 col-lg-4">
+  <div class="proyecto">
+    <img src="9.png" alt="Proyecto 1" id="img1" style="height: 280px; width: 300px;">
+    <div class="overlay">
+      <p style="margin-right: 15px; text-align: center; font-size: 18px; margin-top: -20px; margin-bottom: 30px;" > Right side corner Shop of Size 
+     
+    <br>
+  <B>170 sq.ft.</B></p>
+
+      </div>
+      <p style="color: #f1f1f1; font-size:30px; font-weight: bolder; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;" >Right Side Corner Shop Number 9 of size 170 sq.ft.</p>
+      <p style="color: whitesmoke;">Right Side corner Shop 17 * 10 sq.ft.</p>
+      <br>
+       <a href="https://wa.me/8340601055" style="background-color: #246eaf; color: #f0ecec; padding: 20px; border-radius: 30%;">Book Now</a>
+    </div>
+
+    <br>
+    <br>    </div>
+<br>
+<br>
+
+  
+          </div>
+        </div>
+      </div>
+
+      <div style="background-color: lightcyan;">
+        <h2 style="background-color: rgb(116, 119, 122); text-align: center; font-weight: 900; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">The full layout & design of the complex</h2>
+        <br>
+        <br>
+        <img src="1.png" alt="">
+        <br>
+        <h4 style="text-align: center; background-color: #246eaf; color: #f0ecec;">For Any Requirement & Information</h4>
+        <br>
+        <p style=" text-align: center;"><a href="#Contact" style="background:cornflowerblue; color: rgb(14, 15, 16); border-radius: 100%; padding: 20px;">Contat Us</a></p>
+        <br>
+        <br>
+        
+      </div>
+    </section>
+
+    <!-- Articulos -->
+   
+
+
+    <!-- Testimonios -->
+
+
+
+
+<div style="align-items: center; justify-content: center; display: flex; margin-bottom: 20px; margin-top: 20px; background-color: rgb(222, 250, 250);">
+  <a href="https://wa.me/8340601055" style="color: #f0ecec; background-color: #000000; border-radius: 50%; padding: 20px; margin: 30px;"> Book Now Your Dream Shop</a>
+</div>
+<br>
+<br>
+<video autoplay muted loop id="myVideo" width="400px" height="200px" >
+  <source src="adi.mp4" type="video/mp4" >
+
+</video>
+<br>
+<hr>
+
+    <script>
+        alert("Welcome to USR Complex  🙏🏻 !!");
+        
+       
+        
+    </script>
+
+
+
+
+     <div style="background: lightblue;">
+      <br>
+    
+      <h4 style="background: rgb(243, 246, 250); display: flex; justify-content: center; align-items: center;">For 3D View of Complex You can Visit to...</h4>
+      <br>
+  
+<button style="display: flex; justify-content: center; align-items: center; border-radius: 20%; text-align: center; margin-left: 100px;">  <a href="https://app.vectary.com/p/3YhST1M9kz9NDEFBiHQ6Jx/" style="background: aliceblue; color: #030202;  text-align: center;">3D Viewer Page</a></button>
+<br>
+
+     </div>
+
+<hr>
+
+
+
+
+    <!-- Pie de pagina (footer) -->
+    <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center" id="contacto"> 
+      <img class="footer-logo" src="adi.png" alt="" style="width: 300px; height: 150px;">
+     
+        <div>
+          <h2 id="Contact">Contact Page</h2>
+          <p>contact number :-  +91 96935 47307</p>
+          <p> contact number 2:-  +91 79039 45561</p>
+           <p>Whatsapp contact number :-  +91 83406 01055</p>
+            
+        </div>
+        <br>
+        <hr>
+      <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center" >
+        <a href="https://wa.me/8340601055" target="_blank" rel="noopener noreferrer" id="what">
+          <i class="bi bi-whatsapp"></i>
+        </a>
+        <a href="https://github.com/ankit071105 " target="_blank" rel="noopener noreferrer" id="git">
+          <i class="bi bi-github" ></i>
+        </a>
+        <a href="https://www.linkedin.com/in/ankit-kumar-01a52827b/" target="_blank" rel="noopener noreferrer" id="link">
+          <i class="bi bi-linkedin" ></i>
+        </a>
+        <a href="https://www.instagram.com/aditya_usr/" target="_blank" rel="noopener noreferrer" id="insta">
+          <i class="bi bi-instagram" ></i>
+
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=100042397666963" target="_blank" rel="noopener noreferrer" id="face">
+          <i class="bi bi-facebook" ></i>
+          
+        </a>
+        <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJlJWKxqgmpLPPkdLkmsMVkTWCSlNhSrrDbMzDXxwKKWgstFqVldCbPmnQNzrsjzbSvstlB" target="_blank" rel="noopener noreferrer" id="mail">
+          <i class="bi bi-envelope" style="color: aliceblue;"></i>
+        </a>
+      </div>
+      <div class="derechos-de-autocr">  USR Group  (2023) &#169;</div>
+
+      <p>
+        <B>Website Designer :-</B> <a href="https://www.linkedin.com/in/ankit-kumar-01a52827b/" style="font-weight: bolder; color: aliceblue; font-size: 20px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Kumar Ankit</a>
+      </p>
+    </footer>
+
+
+
+<script>
+
+// ************************************************
+// Shopping Cart API
+// ************************************************
+
+var shoppingCart = (function() {
+    // =============================
+    // Private methods and propeties
+    // =============================
+    cart = [];
+    
+    // Constructor
+    function Item(name, price, count) {
+      this.name = name;
+      this.price = price;
+      this.count = count;
+    }
+    
+    // Save cart
+    function saveCart() {
+      sessionStorage.setItem('shoppingCart', JSON.stringify(cart));
+    }
+    
+      // Load cart
+    function loadCart() {
+      cart = JSON.parse(sessionStorage.getItem('shoppingCart'));
+    }
+    if (sessionStorage.getItem("shoppingCart") != null) {
+      loadCart();
+    }
+    
+  
+    // =============================
+    // Public methods and propeties
+    // =============================
+    var obj = {};
+    
+    // Add to cart
+    obj.addItemToCart = function(name, price, count) {
+      for(var item in cart) {
+        if(cart[item].name === name) {
+          cart[item].count ++;
+          saveCart();
+          return;
+        }
+      }
+      var item = new Item(name, price, count);
+      cart.push(item);
+      saveCart();
+    }
+    // Set count from item
+    obj.setCountForItem = function(name, count) {
+      for(var i in cart) {
+        if (cart[i].name === name) {
+          cart[i].count = count;
+          break;
+        }
+      }
+    };
+    // Remove item from cart
+    obj.removeItemFromCart = function(name) {
+        for(var item in cart) {
+          if(cart[item].name === name) {
+            cart[item].count --;
+            if(cart[item].count === 0) {
+              cart.splice(item, 1);
+            }
+            break;
+          }
+      }
+      saveCart();
+    }
+  
+    // Remove all items from cart
+    obj.removeItemFromCartAll = function(name) {
+      for(var item in cart) {
+        if(cart[item].name === name) {
+          cart.splice(item, 1);
+          break;
+        }
+      }
+      saveCart();
+    }
+  
+    // Clear cart
+    obj.clearCart = function() {
+      cart = [];
+      saveCart();
+    }
+  
+    // Count cart 
+    obj.totalCount = function() {
+      var totalCount = 0;
+      for(var item in cart) {
+        totalCount += cart[item].count;
+      }
+      return totalCount;
+    }
+  
+    // Total cart
+    obj.totalCart = function() {
+      var totalCart = 0;
+      for(var item in cart) {
+        totalCart += cart[item].price * cart[item].count;
+      }
+      return Number(totalCart.toFixed(2));
+    }
+  
+    // List cart
+    obj.listCart = function() {
+      var cartCopy = [];
+      for(i in cart) {
+        item = cart[i];
+        itemCopy = {};
+        for(p in item) {
+          itemCopy[p] = item[p];
+  
+        }
+        itemCopy.total = Number(item.price * item.count).toFixed(2);
+        cartCopy.push(itemCopy)
+      }
+      return cartCopy;
+    }
+  
+    // cart : Array
+    // Item : Object/Class
+    // addItemToCart : Function
+    // removeItemFromCart : Function
+    // removeItemFromCartAll : Function
+    // clearCart : Function
+    // countCart : Function
+    // totalCart : Function
+    // listCart : Function
+    // saveCart : Function
+    // loadCart : Function
+    return obj;
+  })();
+  
+  
+  // *****************************************
+  // Triggers / Events
+  // ***************************************** 
+  // Add item
+  $('.add-to-cart').click(function(event) {
+    event.preventDefault();
+    var name = $(this).data('name');
+    var price = Number($(this).data('price'));
+    shoppingCart.addItemToCart(name, price, 1);
+    displayCart();
+  });
+  
+  // Clear items
+  $('.clear-cart').click(function() {
+    shoppingCart.clearCart();
+    displayCart();
+  });
+  
+  
+  function displayCart() {
+    var cartArray = shoppingCart.listCart();
+    var output = "";
+    for(var i in cartArray) {
+      output += "<tr>"
+        + "<td>" + cartArray[i].name + "</td>" 
+        + "<td>(" + cartArray[i].price + ")</td>"
+        + "<td><div class='input-group'><button class='minus-item input-group-addon btn btn-primary' data-name=" + cartArray[i].name + ">-</button>"
+        + "<input type='number' class='item-count form-control' data-name='" + cartArray[i].name + "' value='" + cartArray[i].count + "'>"
+        + "<button class='plus-item btn btn-primary input-group-addon' data-name=" + cartArray[i].name + ">+</button></div></td>"
+        + "<td><button class='delete-item btn btn-danger' data-name=" + cartArray[i].name + ">X</button></td>"
+        + " = " 
+        + "<td>" + cartArray[i].total + "</td>" 
+        +  "</tr>";
+    }
+    $('.show-cart').html(output);
+    $('.total-cart').html(shoppingCart.totalCart());
+    $('.total-count').html(shoppingCart.totalCount());
+  }
+  
+  // Delete item button
+  
+  $('.show-cart').on("click", ".delete-item", function(event) {
+    var name = $(this).data('name')
+    shoppingCart.removeItemFromCartAll(name);
+    displayCart();
+  })
+  
+  
+  // -1
+  $('.show-cart').on("click", ".minus-item", function(event) {
+    var name = $(this).data('name')
+    shoppingCart.removeItemFromCart(name);
+    displayCart();
+  })
+  // +1
+  $('.show-cart').on("click", ".plus-item", function(event) {
+    var name = $(this).data('name')
+    shoppingCart.addItemToCart(name);
+    displayCart();
+  })
+  
+  // Item count input
+  $('.show-cart').on("change", ".item-count", function(event) {
+     var name = $(this).data('name');
+     var count = Number($(this).val());
+    shoppingCart.setCountForItem(name, count);
+    displayCart();
+  });
+  
+  displayCart();
+
+
+
+
+</script>
+
+
+
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+        <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+        <script src="main.js"></script>
+
+  </body>
+</html>
+
+
+
