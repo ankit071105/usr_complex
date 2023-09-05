@@ -5,7 +5,7 @@
 }
 .navbar {
     padding: 2rem;
-    background-color: #f5f6f7;
+    background-color: #121314;
     width: 100%;
   }
   
@@ -425,10 +425,11 @@ position: relative;
     }
   }
   
-  @media screen and (min-width: 700px) {
+  @media screen and (min-width: 400px) {
     .hero-inferior-imagen {
-      max-width: 600px;
+      max-width: 500px;
     }
+
   }
  .contenedor:hover{
        color: #dbe5ec;
@@ -442,7 +443,8 @@ position: relative;
     background: linear-gradient(to top left, #032342 0%, #0a050b 100%);
 }
 .container-fluid{
-  background: linear-gradient(to bottom right, #0aa8ab 31%, #b146b1 70%);
+  background: linear-gradient(to bottom right, rgb(37, 152, 184) 31%, #f521a4 70%);
+
  
   }
   .nav-link{
@@ -450,7 +452,7 @@ position: relative;
   }
  
   #navbar{
-    background: linear-gradient(to bottom right, #070409 31%, #013954 70%);
+    background: linear-gradient(to bottom right, #621595 31%, #4747eb 70%);
 }
 #hero{
   background: linear-gradient(to bottom left, #000000 0%, #212122 100%);
